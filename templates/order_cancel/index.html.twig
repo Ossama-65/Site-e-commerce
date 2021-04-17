@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Erreur de paiment - Lepascher{% endblock %}
+
+{% block content %}
+<div class="footer-closed">
+    <h2>Erreur de paiment</h2>
+    <p>
+    Bonjour <strong>{{ order.user.firstname }} {{ order.user.lastname }}</strong>,<br /><br />
+    Il semblerait que votre paiment est échoué pour votre commande n°<strong>{{ order.reference }}</strong> <br />
+    Une confirmation de votre échec de paiement viens de vous être envoyer par mail à l'adresse <strong>{{ order.user.email }}</strong>.
+    <hr>
+    <a href="{{ path('order') }}" class="btn btn-success">Réessayer le paiment</a>
+    
+
+
+</div>
+{% endblock %}
