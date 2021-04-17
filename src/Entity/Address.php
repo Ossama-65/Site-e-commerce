@@ -156,7 +156,7 @@ class Address
         return $this->postal;
     }
 
-    public function setPostal(string $postal): self
+    public function setPostal(string $postal): self 
     {
         $this->postal = $postal;
 
